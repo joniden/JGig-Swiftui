@@ -23,7 +23,7 @@ struct BandTags: View {
             .cornerRadius(6)
         }
       }
-    }.padding(.horizontal)
+    }.padding(.vertical, 8.0)
   }
 }
 

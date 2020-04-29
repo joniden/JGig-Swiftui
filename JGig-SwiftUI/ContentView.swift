@@ -17,6 +17,18 @@ struct ContentView: View {
           Image(systemName: "music.house")
           Text("Home")
       }
+      
+      BandsView()
+        .tabItem {
+          Image(systemName: "music.mic")
+          Text("Bands")
+        }
+      
+      GigsView()
+        .tabItem {
+          Image(systemName: "music.note.list")
+          Text("Gigs")
+      }
     }
   }
 }

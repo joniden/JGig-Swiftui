@@ -14,7 +14,7 @@ extension Color {
   }
   
   static var defaultBackgroundColor: Color {
-    return Color(red: 0.173, green: 0.173, blue: 0.18)
+    return Color(red: 0.173, green: 0.173, blue: 0.235)
   }
   
   static var secondaryBackground: Color {
