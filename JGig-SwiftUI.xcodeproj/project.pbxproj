@@ -13,6 +13,10 @@
 		8526DA782459861000703144 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8526DA772459861000703144 /* Assets.xcassets */; };
 		8526DA7B2459861000703144 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8526DA7A2459861000703144 /* Preview Assets.xcassets */; };
 		8526DA7E2459861000703144 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8526DA7C2459861000703144 /* LaunchScreen.storyboard */; };
+		8526DA8724599C3F00703144 /* BandTags.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8526DA8624599C3F00703144 /* BandTags.swift */; };
+		8526DA892459CF3100703144 /* HomeStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8526DA882459CF3100703144 /* HomeStats.swift */; };
+		8526DA8C2459D1A800703144 /* Colors+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8526DA8B2459D1A800703144 /* Colors+Extensions.swift */; };
+		8526DA912459DCB700703144 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8526DA902459DCB700703144 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		8526DA7A2459861000703144 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8526DA7D2459861000703144 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8526DA7F2459861000703144 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8526DA8624599C3F00703144 /* BandTags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BandTags.swift; sourceTree = "<group>"; };
+		8526DA882459CF3100703144 /* HomeStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStats.swift; sourceTree = "<group>"; };
+		8526DA8B2459D1A800703144 /* Colors+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Colors+Extensions.swift"; sourceTree = "<group>"; };
+		8526DA902459DCB700703144 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,8 @@
 		8526DA702459860D00703144 /* JGig-SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				8526DA8A2459D10C00703144 /* Extensions */,
+				8526DA8524599BE900703144 /* Views */,
 				8526DA712459860D00703144 /* AppDelegate.swift */,
 				8526DA732459860D00703144 /* SceneDelegate.swift */,
 				8526DA752459860D00703144 /* ContentView.swift */,
@@ -73,6 +83,32 @@
 				8526DA7A2459861000703144 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8526DA8524599BE900703144 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8526DA8F2459DCA800703144 /* Home */,
+				8526DA8624599C3F00703144 /* BandTags.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8526DA8A2459D10C00703144 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8526DA8B2459D1A800703144 /* Colors+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8526DA8F2459DCA800703144 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				8526DA882459CF3100703144 /* HomeStats.swift */,
+				8526DA902459DCB700703144 /* HomeView.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,7 +183,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8526DA722459860D00703144 /* AppDelegate.swift in Sources */,
+				8526DA912459DCB700703144 /* HomeView.swift in Sources */,
+				8526DA8724599C3F00703144 /* BandTags.swift in Sources */,
 				8526DA742459860D00703144 /* SceneDelegate.swift in Sources */,
+				8526DA8C2459D1A800703144 /* Colors+Extensions.swift in Sources */,
+				8526DA892459CF3100703144 /* HomeStats.swift in Sources */,
 				8526DA762459860D00703144 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
