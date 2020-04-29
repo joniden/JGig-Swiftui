@@ -17,6 +17,7 @@
 		8526DA892459CF3100703144 /* HomeStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8526DA882459CF3100703144 /* HomeStats.swift */; };
 		8526DA8C2459D1A800703144 /* Colors+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8526DA8B2459D1A800703144 /* Colors+Extensions.swift */; };
 		8526DA912459DCB700703144 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8526DA902459DCB700703144 /* HomeView.swift */; };
+		8526DA942459FFF100703144 /* BandsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8526DA932459FFF100703144 /* BandsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		8526DA882459CF3100703144 /* HomeStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStats.swift; sourceTree = "<group>"; };
 		8526DA8B2459D1A800703144 /* Colors+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Colors+Extensions.swift"; sourceTree = "<group>"; };
 		8526DA902459DCB700703144 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		8526DA932459FFF100703144 /* BandsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BandsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 		8526DA702459860D00703144 /* JGig-SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				8526DA95245A010B00703144 /* Models */,
 				8526DA8A2459D10C00703144 /* Extensions */,
 				8526DA8524599BE900703144 /* Views */,
 				8526DA712459860D00703144 /* AppDelegate.swift */,
@@ -88,6 +91,7 @@
 		8526DA8524599BE900703144 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8526DA922459FF8300703144 /* Bands */,
 				8526DA8F2459DCA800703144 /* Home */,
 				8526DA8624599C3F00703144 /* BandTags.swift */,
 			);
@@ -109,6 +113,21 @@
 				8526DA902459DCB700703144 /* HomeView.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		8526DA922459FF8300703144 /* Bands */ = {
+			isa = PBXGroup;
+			children = (
+				8526DA932459FFF100703144 /* BandsView.swift */,
+			);
+			path = Bands;
+			sourceTree = "<group>";
+		};
+		8526DA95245A010B00703144 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,6 +206,7 @@
 				8526DA8724599C3F00703144 /* BandTags.swift in Sources */,
 				8526DA742459860D00703144 /* SceneDelegate.swift in Sources */,
 				8526DA8C2459D1A800703144 /* Colors+Extensions.swift in Sources */,
+				8526DA942459FFF100703144 /* BandsView.swift in Sources */,
 				8526DA892459CF3100703144 /* HomeStats.swift in Sources */,
 				8526DA762459860D00703144 /* ContentView.swift in Sources */,
 			);
