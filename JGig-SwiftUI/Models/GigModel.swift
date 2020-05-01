@@ -24,6 +24,17 @@ struct GigModel: Codable {
     case endDate = "end_date"
   }
   
+  init() {
+    id = 0
+    name = "default"
+    fromDate = nil
+    endDate = nil
+    type = .concert
+    bands = nil
+    venue = nil
+    images = nil
+  }
+  
   init(from decoder: Decoder) throws {
     let values = try decoder.container(keyedBy: CodingKeys.self)
     id = try values.decode(Int.self, forKey: .id)

@@ -11,9 +11,12 @@ import KingfisherSwiftUI
 
 struct HomeView: View {
   
-  @ObservedObject var model = Route()
+  //var model = HomeApiModel(gigs: 0, bands: [], lastgig: GigModel(), totalGigCount: 0, title: "Latest Gig")
+  
+  @ObservedObject var model: HomeViewModel = HomeViewModel()
   
   var body: some View {
+    
     NavigationView {
       VStack(alignment: .leading) {
         GigImage(model.home?.lastgig.images?.first?.path)
