@@ -27,7 +27,7 @@ struct GigsView: View {
               Text("Klubben, Februari 2020")
                 .multilineTextAlignment(.leading)
 
-              BandTags()
+              BandTags(nil)
             }
             .frame(height: 112.0)
           }

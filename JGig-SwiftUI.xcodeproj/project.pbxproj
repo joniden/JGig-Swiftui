@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,6 +19,22 @@
 		8526DA912459DCB700703144 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8526DA902459DCB700703144 /* HomeView.swift */; };
 		8526DA942459FFF100703144 /* BandsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8526DA932459FFF100703144 /* BandsView.swift */; };
 		8526DA98245A06B000703144 /* GigsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8526DA97245A06B000703144 /* GigsView.swift */; };
+		8526DAA3245A0D5800703144 /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8526DA9A245A0D5700703144 /* ImageModel.swift */; };
+		8526DAA4245A0D5800703144 /* HomeApiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8526DA9B245A0D5800703144 /* HomeApiModel.swift */; };
+		8526DAA5245A0D5800703144 /* BandSectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8526DA9C245A0D5800703144 /* BandSectionModel.swift */; };
+		8526DAA6245A0D5800703144 /* BandsApiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8526DA9D245A0D5800703144 /* BandsApiModel.swift */; };
+		8526DAA7245A0D5800703144 /* GigType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8526DA9E245A0D5800703144 /* GigType.swift */; };
+		8526DAA8245A0D5800703144 /* GigModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8526DA9F245A0D5800703144 /* GigModel.swift */; };
+		8526DAA9245A0D5800703144 /* VenueModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8526DAA0245A0D5800703144 /* VenueModel.swift */; };
+		8526DAAA245A0D5800703144 /* GigsApiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8526DAA1245A0D5800703144 /* GigsApiModel.swift */; };
+		8526DAAB245A0D5800703144 /* BandModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8526DAA2245A0D5800703144 /* BandModel.swift */; };
+		8526DAB0245A0DE200703144 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 8526DAAF245A0DE200703144 /* Alamofire */; };
+		8526DAB2245A142C00703144 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8526DAB1245A142C00703144 /* ApiManager.swift */; };
+		8526DAB6245A17A200703144 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8526DAB5245A17A200703144 /* Route.swift */; };
+		8526DAB8245A1CC200703144 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8526DAB7245A1CC200703144 /* String+Extensions.swift */; };
+		8526DABA245A1CE500703144 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8526DAB9245A1CE500703144 /* Constant.swift */; };
+		8526DABD245A1F5E00703144 /* KingfisherSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 8526DABC245A1F5E00703144 /* KingfisherSwiftUI */; };
+		8526DABF245A243300703144 /* GigImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8526DABE245A243300703144 /* GigImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +52,20 @@
 		8526DA902459DCB700703144 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		8526DA932459FFF100703144 /* BandsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BandsView.swift; sourceTree = "<group>"; };
 		8526DA97245A06B000703144 /* GigsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GigsView.swift; sourceTree = "<group>"; };
+		8526DA9A245A0D5700703144 /* ImageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
+		8526DA9B245A0D5800703144 /* HomeApiModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeApiModel.swift; sourceTree = "<group>"; };
+		8526DA9C245A0D5800703144 /* BandSectionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BandSectionModel.swift; sourceTree = "<group>"; };
+		8526DA9D245A0D5800703144 /* BandsApiModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BandsApiModel.swift; sourceTree = "<group>"; };
+		8526DA9E245A0D5800703144 /* GigType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GigType.swift; sourceTree = "<group>"; };
+		8526DA9F245A0D5800703144 /* GigModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GigModel.swift; sourceTree = "<group>"; };
+		8526DAA0245A0D5800703144 /* VenueModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenueModel.swift; sourceTree = "<group>"; };
+		8526DAA1245A0D5800703144 /* GigsApiModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GigsApiModel.swift; sourceTree = "<group>"; };
+		8526DAA2245A0D5800703144 /* BandModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BandModel.swift; sourceTree = "<group>"; };
+		8526DAB1245A142C00703144 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		8526DAB5245A17A200703144 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		8526DAB7245A1CC200703144 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		8526DAB9245A1CE500703144 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		8526DABE245A243300703144 /* GigImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GigImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +73,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8526DABD245A1F5E00703144 /* KingfisherSwiftUI in Frameworks */,
+				8526DAB0245A0DE200703144 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +100,7 @@
 		8526DA702459860D00703144 /* JGig-SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				8526DA99245A0D1600703144 /* Services */,
 				8526DA95245A010B00703144 /* Models */,
 				8526DA8A2459D10C00703144 /* Extensions */,
 				8526DA8524599BE900703144 /* Views */,
@@ -78,6 +111,7 @@
 				8526DA7C2459861000703144 /* LaunchScreen.storyboard */,
 				8526DA7F2459861000703144 /* Info.plist */,
 				8526DA792459861000703144 /* Preview Content */,
+				8526DAB9245A1CE500703144 /* Constant.swift */,
 			);
 			path = "JGig-SwiftUI";
 			sourceTree = "<group>";
@@ -105,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				8526DA8B2459D1A800703144 /* Colors+Extensions.swift */,
+				8526DAB7245A1CC200703144 /* String+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -129,6 +164,15 @@
 		8526DA95245A010B00703144 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				8526DAA2245A0D5800703144 /* BandModel.swift */,
+				8526DA9D245A0D5800703144 /* BandsApiModel.swift */,
+				8526DA9C245A0D5800703144 /* BandSectionModel.swift */,
+				8526DA9F245A0D5800703144 /* GigModel.swift */,
+				8526DAA1245A0D5800703144 /* GigsApiModel.swift */,
+				8526DA9E245A0D5800703144 /* GigType.swift */,
+				8526DA9B245A0D5800703144 /* HomeApiModel.swift */,
+				8526DA9A245A0D5700703144 /* ImageModel.swift */,
+				8526DAA0245A0D5800703144 /* VenueModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -137,8 +181,18 @@
 			isa = PBXGroup;
 			children = (
 				8526DA97245A06B000703144 /* GigsView.swift */,
+				8526DABE245A243300703144 /* GigImage.swift */,
 			);
 			path = Gigs;
+			sourceTree = "<group>";
+		};
+		8526DA99245A0D1600703144 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8526DAB1245A142C00703144 /* ApiManager.swift */,
+				8526DAB5245A17A200703144 /* Route.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,6 +211,10 @@
 			dependencies = (
 			);
 			name = "JGig-SwiftUI";
+			packageProductDependencies = (
+				8526DAAF245A0DE200703144 /* Alamofire */,
+				8526DABC245A1F5E00703144 /* KingfisherSwiftUI */,
+			);
 			productName = "JGig-SwiftUI";
 			productReference = 8526DA6E2459860D00703144 /* JGig-SwiftUI.app */;
 			productType = "com.apple.product-type.application";
@@ -185,6 +243,10 @@
 				Base,
 			);
 			mainGroup = 8526DA652459860D00703144;
+			packageReferences = (
+				8526DAAE245A0DE200703144 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				8526DABB245A1F5E00703144 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 8526DA6F2459860D00703144 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -213,14 +275,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				8526DA722459860D00703144 /* AppDelegate.swift in Sources */,
+				8526DAB8245A1CC200703144 /* String+Extensions.swift in Sources */,
+				8526DABF245A243300703144 /* GigImage.swift in Sources */,
+				8526DAA3245A0D5800703144 /* ImageModel.swift in Sources */,
 				8526DA912459DCB700703144 /* HomeView.swift in Sources */,
+				8526DAA8245A0D5800703144 /* GigModel.swift in Sources */,
 				8526DA8724599C3F00703144 /* BandTags.swift in Sources */,
+				8526DAA5245A0D5800703144 /* BandSectionModel.swift in Sources */,
+				8526DAA6245A0D5800703144 /* BandsApiModel.swift in Sources */,
 				8526DA742459860D00703144 /* SceneDelegate.swift in Sources */,
+				8526DAA7245A0D5800703144 /* GigType.swift in Sources */,
 				8526DA8C2459D1A800703144 /* Colors+Extensions.swift in Sources */,
 				8526DA98245A06B000703144 /* GigsView.swift in Sources */,
 				8526DA942459FFF100703144 /* BandsView.swift in Sources */,
+				8526DAAB245A0D5800703144 /* BandModel.swift in Sources */,
+				8526DAB6245A17A200703144 /* Route.swift in Sources */,
+				8526DAAA245A0D5800703144 /* GigsApiModel.swift in Sources */,
+				8526DAB2245A142C00703144 /* ApiManager.swift in Sources */,
 				8526DA892459CF3100703144 /* HomeStats.swift in Sources */,
 				8526DA762459860D00703144 /* ContentView.swift in Sources */,
+				8526DABA245A1CE500703144 /* Constant.swift in Sources */,
+				8526DAA4245A0D5800703144 /* HomeApiModel.swift in Sources */,
+				8526DAA9245A0D5800703144 /* VenueModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +490,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8526DAAE245A0DE200703144 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.0;
+			};
+		};
+		8526DABB245A1F5E00703144 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.13.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8526DAAF245A0DE200703144 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8526DAAE245A0DE200703144 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		8526DABC245A1F5E00703144 /* KingfisherSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8526DABB245A1F5E00703144 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = KingfisherSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8526DA662459860D00703144 /* Project object */;
 }

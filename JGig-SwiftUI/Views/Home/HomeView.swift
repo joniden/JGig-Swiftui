@@ -7,22 +7,24 @@
 //
 
 import SwiftUI
+import KingfisherSwiftUI
 
 struct HomeView: View {
+  
+  @ObservedObject var model = Route()
+  
   var body: some View {
     NavigationView {
       VStack(alignment: .leading) {
-        Image("default_gig")
-          .resizable()
-          .scaledToFit()
-        Text("BandName")
+        GigImage(model.home?.lastgig.images?.first?.path)
+        Text(model.home?.lastgig.name ?? "")
           .font(.system(size: 28))
           .bold()
           .padding(.horizontal)
-        Text("Location, Date")
+        Text(model.home?.lastgig.fromDate ?? "")
           .foregroundColor(.secondary)
           .padding(.horizontal)
-        BandTags()
+        BandTags(model.home?.lastgig.bands).padding(.horizontal)
         HomeStats().padding()
       }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .topLeading)
       

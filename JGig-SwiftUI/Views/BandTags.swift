@@ -9,15 +9,19 @@
 import SwiftUI
 
 struct BandTags: View {
-  let bands = ["Band 1", "Band 2", "Band 3", "Band 4", "Band 5", "Band 6"]
+  private var bands: [BandModel]
+  private let colors: [Color] = [.blue, .red, .green, .yellow, .purple, .pink]
   
-  let colors: [Color] = [.blue, .red, .green, .yellow, .purple, .pink]
+  init(_ bands: [BandModel]?) {
+    self.bands = bands ?? []
+  }
   
   var body: some View {
+    
     ScrollView(.horizontal) {
       HStack(alignment: .center) {
-        ForEach(Array(bands.enumerated()), id: \.element) { index, band in
-          Text(band)
+        ForEach(Array(bands.enumerated()), id: \.offset) { index, band in
+          Text(band.name)
             .padding(.horizontal)
             .background(self.colors[index])
             .cornerRadius(6)
@@ -29,6 +33,6 @@ struct BandTags: View {
 
 struct BandTags_Previews: PreviewProvider {
     static var previews: some View {
-        BandTags()
+      BandTags(nil)
     }
 }
