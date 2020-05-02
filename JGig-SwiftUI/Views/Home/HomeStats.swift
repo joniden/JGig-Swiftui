@@ -9,6 +9,11 @@
 import SwiftUI
 
 struct HomeStats: View {
+  
+  var gigs: Int = 0
+  var totalGigCount: Int = 0
+  var bandsCount: Int = 0
+  
   var body: some View {
     VStack(alignment: .center, spacing: 16.0) {
       Text("Stats")
@@ -19,9 +24,9 @@ struct HomeStats: View {
         .frame(maxWidth: .infinity)
       
       HStack(alignment: .center) {
-        Cell(digit: 1, header: "Bands")
-        Cell(digit: 2, header: "Gigs")
-        Cell(digit: 3, header: "On Stage")
+        Cell(digit: bandsCount, header: "Bands")
+        Cell(digit: gigs, header: "Gigs")
+        Cell(digit: totalGigCount, header: "On Stage")
       }.frame(maxWidth: .infinity)
       
     }.frame(maxWidth: .infinity)
@@ -32,8 +37,8 @@ struct HomeStats: View {
   
   struct Cell: View {
     
-    @State var digit: Int
-    @State var header: String
+    var digit: Int
+    var header: String
     
     var body: some View {
       VStack {

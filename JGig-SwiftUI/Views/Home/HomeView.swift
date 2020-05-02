@@ -11,10 +11,8 @@ import KingfisherSwiftUI
 
 struct HomeView: View {
   
-  //var model = HomeApiModel(gigs: 0, bands: [], lastgig: GigModel(), totalGigCount: 0, title: "Latest Gig")
-  
   @ObservedObject var model: HomeViewModel = HomeViewModel()
-  
+
   var body: some View {
     
     NavigationView {
@@ -28,7 +26,10 @@ struct HomeView: View {
           .foregroundColor(.secondary)
           .padding(.horizontal)
         BandTags(model.home?.lastgig.bands).padding(.horizontal)
-        HomeStats().padding()
+        HomeStats(gigs: model.home?.gigs ?? 0,
+                  totalGigCount: model.home?.totalGigCount ?? 0,
+                  bandsCount: model.home?.bands.count ?? 0)
+          .padding()
       }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .topLeading)
       
       .navigationBarTitle("Latest Gig")

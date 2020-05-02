@@ -15,7 +15,7 @@ class HomeViewModel: ObservableObject {
   var cancellationToken: AnyCancellable?
   
   init() {
-    cancellationToken = JGigApi.home().mapError({ (error) -> Error in // 5
+    cancellationToken = JGigApi.screen(.home).mapError({ (error) -> Error in // 5
         print(error)
         return error
       })

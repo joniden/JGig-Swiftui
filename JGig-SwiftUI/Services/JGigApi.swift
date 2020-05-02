@@ -21,22 +21,20 @@ enum JGigApi {
   
   // MARK: - Vars
 
-  static let agent = Agent()
-  static let base = Constant.baseUrl
+  static private let agent = Agent()
+  static private let base = Constant.baseUrl
   
   // MARK: - Static funcs
   
-  static func home() -> AnyPublisher<HomeApiModel, Error> {
-    let request = URLRequest(url: URL(string: base + Screen.home.rawValue)!)
+  static func screen<T: Decodable>(_ screen: Screen) -> AnyPublisher<T, Error> {
+    let request = URLRequest(url: URL(string: base + screen.rawValue)!)
     return run(request)
   }
-  
+
   static func run<T: Decodable>(_ request: URLRequest) -> AnyPublisher<T, Error> {
-      return agent.run(request)
-          .map(\.value)
-          .eraseToAnyPublisher()
+    return agent.run(request)
+      .map(\.value)
+      .eraseToAnyPublisher()
   }
-  
-  // MARK: - Public methods
   
 }

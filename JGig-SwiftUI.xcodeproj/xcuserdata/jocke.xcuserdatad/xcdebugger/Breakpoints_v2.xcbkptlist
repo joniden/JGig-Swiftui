@@ -20,5 +20,53 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DCF8AE7E-8533-4C6C-A780-485BA32DA379"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "JGig-SwiftUI/Models/HomeApiModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "CodingKeys"
+            landmarkType = "13">
+            <Locations>
+               <Location
+                  uuid = "DCF8AE7E-8533-4C6C-A780-485BA32DA379 - 9228cae200f4be25"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "JGig_SwiftUI.HomeApiModel.CodingKeys.init(rawValue: Swift.String) -&gt; Swift.Optional&lt;JGig_SwiftUI.HomeApiModel.CodingKeys&gt;"
+                  moduleName = "JGig-SwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jocke/Documents/xcode/JGig-SwiftUI/JGig-SwiftUI/Models/HomeApiModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "251">
+               </Location>
+               <Location
+                  uuid = "DCF8AE7E-8533-4C6C-A780-485BA32DA379 - ad8a99c71b3ec9c2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "JGig_SwiftUI.HomeApiModel.CodingKeys.rawValue.getter : Swift.String"
+                  moduleName = "JGig-SwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jocke/Documents/xcode/JGig-SwiftUI/JGig-SwiftUI/Models/HomeApiModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "176">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
