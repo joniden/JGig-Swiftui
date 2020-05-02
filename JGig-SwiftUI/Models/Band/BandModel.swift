@@ -9,10 +9,10 @@
 import Foundation
 
 // MARK: - HomeBand
-struct BandModel: Codable, Identifiable {
-    let id: Int
-    let name: String
-    let gigs: [GigModel]?
+struct BandModel: Codable, Identifiable, Hashable {
+  let id: Int
+  let name: String
+  let gigs: [GigModel]?
 }
 
 extension Array where Element == BandModel {

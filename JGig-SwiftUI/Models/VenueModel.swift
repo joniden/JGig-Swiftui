@@ -13,3 +13,5 @@ struct VenueModel: Codable {
     let name: String
     let address, city, country: String?
 }
+
+extension VenueModel: Hashable { }

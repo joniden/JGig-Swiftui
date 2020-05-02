@@ -9,7 +9,8 @@
 import Foundation
 
 // MARK: - Gig
-struct GigModel: Codable {
+struct GigModel: Codable, Identifiable {
+  
   let id: Int
   let name: String
   let fromDate, endDate: String?
@@ -17,6 +18,8 @@ struct GigModel: Codable {
   let bands: [BandModel]?
   let venue: VenueModel?
   let images: [ImageModel]?
+  
+  let year: String? // Not from API
   
   enum CodingKeys: String, CodingKey {
     case id, name, type, bands, venue, images
@@ -33,6 +36,7 @@ struct GigModel: Codable {
     bands = nil
     venue = nil
     images = nil
+    year = nil
   }
   
   init(from decoder: Decoder) throws {
@@ -51,8 +55,16 @@ struct GigModel: Codable {
     fromDate = fromDateString.getFormattedDateString()
     endDate = endDateString.getFormattedDateString()
     
+    year = fromDate.getYearFromString()
+    
   }
   
+}
+
+extension GigModel: Hashable {
+  static func == (lhs: GigModel, rhs: GigModel) -> Bool {
+    return rhs.id == lhs.id
+  }
 }
 
 extension Array where Element == GigModel {
@@ -64,5 +76,16 @@ extension Array where Element == GigModel {
     return self.filter {
       $0.name.lowercaseContains(string)
     }
+  }
+  
+  /// Groups gigmodel by the year and sorts the array by year
+  /// - Returns: GigSectionModels
+  func createYearSection() -> [GigSectionModel] {
+    
+    let dict = Dictionary(grouping: self) { $0.year }
+    
+    return dict.map {
+      GigSectionModel(year: $0.key ?? "", rows: $0.value)
+    }.sorted(by: { (Int($0.year) ?? 0) < (Int($1.year) ?? 0) })
   }
 }

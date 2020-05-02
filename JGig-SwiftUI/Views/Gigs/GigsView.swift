@@ -9,29 +9,20 @@
 import SwiftUI
 
 struct GigsView: View {
-  var gigs: [String] = ["A day to remember",
-                         "Architects",
-                         "The Ark",
-                         "As I Lay Dying"]
+  
+  @ObservedObject var model: GigsViewModel = GigsViewModel()
   
   var body: some View {
     NavigationView {
       List {
-        Section(header: Text("2020")) {
-          ForEach(Array(gigs.enumerated()), id: \.element) { index, gig in
-            VStack(alignment: .leading, spacing: 8.0) {
-              Text(gig)
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .multilineTextAlignment(.leading)
-                .font(.system(size: 17, weight: .bold))
-              Text("Klubben, Februari 2020")
-                .multilineTextAlignment(.leading)
-
-              BandTags(nil)
+        ForEach(model.sections, id: \.year) { section in
+          Section(header: Text(section.year)) {
+            ForEach(section.rows, id: \.id) { gig in
+              GigRow(gig: gig)
             }
-            .frame(height: 112.0)
           }
         }
+       
       }
       .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .topLeading)
          

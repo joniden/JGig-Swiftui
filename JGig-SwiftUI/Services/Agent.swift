@@ -26,4 +26,8 @@ struct Agent {
       .receive(on: DispatchQueue.main)
       .eraseToAnyPublisher()
   }
+  
+  private func emptyPublisher<T>(completeImmediately: Bool = true) -> AnyPublisher<T, Error> {
+      Empty<T, Error>(completeImmediately: completeImmediately).eraseToAnyPublisher()
+  }
 }

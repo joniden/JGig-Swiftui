@@ -33,4 +33,18 @@ extension Optional where Wrapped == String {
     
     return toDateFormatter.string(from: date)
   }
+  
+  func getYearFromString() -> String {
+    let fromDateFormatter = DateFormatter()
+    fromDateFormatter.dateFormat = "YYYY-MM-dd"
+    
+    let toDateFormatter = DateFormatter()
+    toDateFormatter.dateFormat = "YYYY"
+    
+    guard let string = self, let date = fromDateFormatter.date(from: string) else {
+      return ""
+    }
+    
+    return toDateFormatter.string(from: date)
+  }
 }

@@ -8,6 +8,6 @@
 
 import Foundation
 
-enum GigType: String, Codable {
+enum GigType: String, Codable, Hashable {
     case concert, festival
 }

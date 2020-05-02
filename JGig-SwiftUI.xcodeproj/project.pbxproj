@@ -37,6 +37,12 @@
 		8526DAC8245D3E6700703144 /* KingfisherSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 8526DAC7245D3E6700703144 /* KingfisherSwiftUI */; };
 		8526DACA245D406A00703144 /* BandsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8526DAC9245D406A00703144 /* BandsViewModel.swift */; };
 		8526DACC245D546E00703144 /* BandRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8526DACB245D546E00703144 /* BandRow.swift */; };
+		8526DAD3245D5C1500703144 /* GigSectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8526DAD2245D5C1500703144 /* GigSectionModel.swift */; };
+		8526DAD5245D5FF300703144 /* GigsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8526DAD4245D5FF300703144 /* GigsViewModel.swift */; };
+		8526DAD7245D606500703144 /* GigRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8526DAD6245D606500703144 /* GigRow.swift */; };
+		8526DAD9245D966100703144 /* BandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8526DAD8245D966100703144 /* BandView.swift */; };
+		8526DADD245D970B00703144 /* BandViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8526DADC245D970B00703144 /* BandViewModel.swift */; };
+		8526DADF245DBFCA00703144 /* BandApiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8526DADE245DBFCA00703144 /* BandApiModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +77,12 @@
 		8526DAC3245C86E800703144 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		8526DAC9245D406A00703144 /* BandsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BandsViewModel.swift; sourceTree = "<group>"; };
 		8526DACB245D546E00703144 /* BandRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BandRow.swift; sourceTree = "<group>"; };
+		8526DAD2245D5C1500703144 /* GigSectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GigSectionModel.swift; sourceTree = "<group>"; };
+		8526DAD4245D5FF300703144 /* GigsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GigsViewModel.swift; sourceTree = "<group>"; };
+		8526DAD6245D606500703144 /* GigRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GigRow.swift; sourceTree = "<group>"; };
+		8526DAD8245D966100703144 /* BandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BandView.swift; sourceTree = "<group>"; };
+		8526DADC245D970B00703144 /* BandViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BandViewModel.swift; sourceTree = "<group>"; };
+		8526DADE245DBFCA00703144 /* BandApiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BandApiModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,7 +147,6 @@
 				8526DA96245A067100703144 /* Gigs */,
 				8526DA922459FF8300703144 /* Bands */,
 				8526DA8F2459DCA800703144 /* Home */,
-				8526DA8624599C3F00703144 /* BandTags.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -162,9 +173,10 @@
 		8526DA922459FF8300703144 /* Bands */ = {
 			isa = PBXGroup;
 			children = (
-				8526DA932459FFF100703144 /* BandsView.swift */,
-				8526DAC9245D406A00703144 /* BandsViewModel.swift */,
+				8526DADA245D96F200703144 /* BandsView */,
 				8526DACB245D546E00703144 /* BandRow.swift */,
+				8526DA8624599C3F00703144 /* BandTags.swift */,
+				8526DADB245D96FB00703144 /* BandView */,
 			);
 			path = Bands;
 			sourceTree = "<group>";
@@ -172,12 +184,8 @@
 		8526DA95245A010B00703144 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				8526DAA2245A0D5800703144 /* BandModel.swift */,
-				8526DA9D245A0D5800703144 /* BandsApiModel.swift */,
-				8526DA9C245A0D5800703144 /* BandSectionModel.swift */,
-				8526DA9F245A0D5800703144 /* GigModel.swift */,
-				8526DAA1245A0D5800703144 /* GigsApiModel.swift */,
-				8526DA9E245A0D5800703144 /* GigType.swift */,
+				8526DAD0245D5BFE00703144 /* Gig */,
+				8526DACF245D5BF000703144 /* Band */,
 				8526DA9B245A0D5800703144 /* HomeApiModel.swift */,
 				8526DA9A245A0D5700703144 /* ImageModel.swift */,
 				8526DAA0245A0D5800703144 /* VenueModel.swift */,
@@ -190,6 +198,8 @@
 			children = (
 				8526DA97245A06B000703144 /* GigsView.swift */,
 				8526DABE245A243300703144 /* GigImage.swift */,
+				8526DAD4245D5FF300703144 /* GigsViewModel.swift */,
+				8526DAD6245D606500703144 /* GigRow.swift */,
 			);
 			path = Gigs;
 			sourceTree = "<group>";
@@ -208,6 +218,46 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8526DACF245D5BF000703144 /* Band */ = {
+			isa = PBXGroup;
+			children = (
+				8526DAA2245A0D5800703144 /* BandModel.swift */,
+				8526DADE245DBFCA00703144 /* BandApiModel.swift */,
+				8526DA9D245A0D5800703144 /* BandsApiModel.swift */,
+				8526DA9C245A0D5800703144 /* BandSectionModel.swift */,
+			);
+			path = Band;
+			sourceTree = "<group>";
+		};
+		8526DAD0245D5BFE00703144 /* Gig */ = {
+			isa = PBXGroup;
+			children = (
+				8526DA9F245A0D5800703144 /* GigModel.swift */,
+				8526DAA1245A0D5800703144 /* GigsApiModel.swift */,
+				8526DA9E245A0D5800703144 /* GigType.swift */,
+				8526DAD2245D5C1500703144 /* GigSectionModel.swift */,
+			);
+			path = Gig;
+			sourceTree = "<group>";
+		};
+		8526DADA245D96F200703144 /* BandsView */ = {
+			isa = PBXGroup;
+			children = (
+				8526DA932459FFF100703144 /* BandsView.swift */,
+				8526DAC9245D406A00703144 /* BandsViewModel.swift */,
+			);
+			path = BandsView;
+			sourceTree = "<group>";
+		};
+		8526DADB245D96FB00703144 /* BandView */ = {
+			isa = PBXGroup;
+			children = (
+				8526DAD8245D966100703144 /* BandView.swift */,
+				8526DADC245D970B00703144 /* BandViewModel.swift */,
+			);
+			path = BandView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,6 +342,7 @@
 				8526DABF245A243300703144 /* GigImage.swift in Sources */,
 				8526DAA3245A0D5800703144 /* ImageModel.swift in Sources */,
 				8526DA912459DCB700703144 /* HomeView.swift in Sources */,
+				8526DAD9245D966100703144 /* BandView.swift in Sources */,
 				8526DAA8245A0D5800703144 /* GigModel.swift in Sources */,
 				8526DA8724599C3F00703144 /* BandTags.swift in Sources */,
 				8526DAA5245A0D5800703144 /* BandSectionModel.swift in Sources */,
@@ -299,13 +350,17 @@
 				8526DA742459860D00703144 /* SceneDelegate.swift in Sources */,
 				8526DAA7245A0D5800703144 /* GigType.swift in Sources */,
 				8526DA8C2459D1A800703144 /* Colors+Extensions.swift in Sources */,
+				8526DADF245DBFCA00703144 /* BandApiModel.swift in Sources */,
+				8526DAD7245D606500703144 /* GigRow.swift in Sources */,
 				8526DA98245A06B000703144 /* GigsView.swift in Sources */,
+				8526DAD3245D5C1500703144 /* GigSectionModel.swift in Sources */,
 				8526DA942459FFF100703144 /* BandsView.swift in Sources */,
 				8526DACA245D406A00703144 /* BandsViewModel.swift in Sources */,
 				8526DAAB245A0D5800703144 /* BandModel.swift in Sources */,
 				8526DAB6245A17A200703144 /* JGigApi.swift in Sources */,
 				8526DAAA245A0D5800703144 /* GigsApiModel.swift in Sources */,
 				8526DA892459CF3100703144 /* HomeStats.swift in Sources */,
+				8526DAD5245D5FF300703144 /* GigsViewModel.swift in Sources */,
 				8526DA762459860D00703144 /* ContentView.swift in Sources */,
 				8526DAC5245D3C3E00703144 /* HomeViewModel.swift in Sources */,
 				8526DABA245A1CE500703144 /* Constant.swift in Sources */,
@@ -313,6 +368,7 @@
 				8526DAA4245A0D5800703144 /* HomeApiModel.swift in Sources */,
 				8526DAA9245A0D5800703144 /* VenueModel.swift in Sources */,
 				8526DACC245D546E00703144 /* BandRow.swift in Sources */,
+				8526DADD245D970B00703144 /* BandViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

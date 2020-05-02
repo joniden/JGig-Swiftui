@@ -17,14 +17,15 @@ struct BandsView: View {
       List {
         ForEach(model.sections, id: \.letter) { section in
           Section(header: Text(section.letter)) {
-            ForEach(section.rows) { band in
-              BandRow(band: band)
+            ForEach(section.rows, id: \.id) { band in
+              NavigationLink(destination: BandView(band.id)) {
+                BandRow(band: band)
+              }
             }
           }
         }
       }
       .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .topLeading)
-         
       .navigationBarTitle("Bands")
     }
   }
