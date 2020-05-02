@@ -10,27 +10,16 @@ import SwiftUI
 
 struct BandsView: View {
   
-  var bands: [String] = ["A day to remember",
-                         "Architects",
-                         "The Ark",
-                         "As I Lay Dying"]
+  @ObservedObject var model: BandsViewModel = BandsViewModel()
   
   var body: some View {
     NavigationView {
       List {
-        Section(header: Text("A")) {
-          ForEach(Array(bands.enumerated()), id: \.element) { index, band in
-            HStack(alignment: .center, spacing: 16.0) {
-              Image("placeholder")
-              Text(band)
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .multilineTextAlignment(.leading)
-                .font(.system(size: 17, weight: .bold))
-              Text("3")
-                .multilineTextAlignment(.trailing)
-                .frame(width: 10.0)
+        ForEach(model.sections, id: \.letter) { section in
+          Section(header: Text(section.letter)) {
+            ForEach(section.rows) { band in
+              BandRow(band: band)
             }
-            .frame(height: 60.0)
           }
         }
       }

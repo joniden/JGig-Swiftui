@@ -30,6 +30,10 @@ enum JGigApi {
     let request = URLRequest(url: URL(string: base + screen.rawValue)!)
     return run(request)
   }
+  
+  static func bands() -> AnyPublisher<BandsApiModel, Error> {
+    return screen(.home)
+  }
 
   static func run<T: Decodable>(_ request: URLRequest) -> AnyPublisher<T, Error> {
     return agent.run(request)
