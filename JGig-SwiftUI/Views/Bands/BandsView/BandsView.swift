@@ -19,7 +19,7 @@ struct BandsView: View {
       VStack {
         SearchBar(text: $searchText)
         List {
-          ForEach(model.sections, id: \.letter) { section in
+          ForEach(model.sections.search(searchText), id: \.letter) { section in
             Section(header: Text(section.letter)) {
               ForEach(section.rows, id: \.id) { band in
                 NavigationLink(destination: BandView(band)) {

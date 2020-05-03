@@ -84,5 +84,53 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "34BB52BD-92D0-41AC-A39D-614DA52F4B0C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "JGig-SwiftUI/Views/Bands/BandView/BandView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "34BB52BD-92D0-41AC-A39D-614DA52F4B0C - 5a298d192cd92880"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;JGig_SwiftUI.GigModel&gt;, Swift.Int, JGig_SwiftUI.GigRow&gt; in JGig_SwiftUI.BandView.body.getter : some"
+                  moduleName = "JGig-SwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jocke/Documents/xcode/JGig-SwiftUI/JGig-SwiftUI/Views/Bands/BandView/BandView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "22">
+               </Location>
+               <Location
+                  uuid = "34BB52BD-92D0-41AC-A39D-614DA52F4B0C - 52ce0076f5c15dc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (JGig_SwiftUI.GigModel) -&gt; JGig_SwiftUI.GigRow in closure #1 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;JGig_SwiftUI.GigModel&gt;, Swift.Int, JGig_SwiftUI.GigRow&gt; in JGig_SwiftUI.BandView.body.getter : some"
+                  moduleName = "JGig-SwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jocke/Documents/xcode/JGig-SwiftUI/JGig-SwiftUI/Views/Bands/BandView/BandView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "43">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
