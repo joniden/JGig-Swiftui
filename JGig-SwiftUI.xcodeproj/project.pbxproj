@@ -43,6 +43,7 @@
 		8526DAD9245D966100703144 /* BandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8526DAD8245D966100703144 /* BandView.swift */; };
 		8526DADD245D970B00703144 /* BandViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8526DADC245D970B00703144 /* BandViewModel.swift */; };
 		8526DADF245DBFCA00703144 /* BandApiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8526DADE245DBFCA00703144 /* BandApiModel.swift */; };
+		8526DAE1245EAEFA00703144 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8526DAE0245EAEFA00703144 /* SearchBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,6 +84,7 @@
 		8526DAD8245D966100703144 /* BandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BandView.swift; sourceTree = "<group>"; };
 		8526DADC245D970B00703144 /* BandViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BandViewModel.swift; sourceTree = "<group>"; };
 		8526DADE245DBFCA00703144 /* BandApiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BandApiModel.swift; sourceTree = "<group>"; };
+		8526DAE0245EAEFA00703144 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,7 @@
 				8526DA96245A067100703144 /* Gigs */,
 				8526DA922459FF8300703144 /* Bands */,
 				8526DA8F2459DCA800703144 /* Home */,
+				8526DAE0245EAEFA00703144 /* SearchBar.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -344,6 +347,7 @@
 				8526DA912459DCB700703144 /* HomeView.swift in Sources */,
 				8526DAD9245D966100703144 /* BandView.swift in Sources */,
 				8526DAA8245A0D5800703144 /* GigModel.swift in Sources */,
+				8526DAE1245EAEFA00703144 /* SearchBar.swift in Sources */,
 				8526DA8724599C3F00703144 /* BandTags.swift in Sources */,
 				8526DAA5245A0D5800703144 /* BandSectionModel.swift in Sources */,
 				8526DAA6245A0D5800703144 /* BandsApiModel.swift in Sources */,

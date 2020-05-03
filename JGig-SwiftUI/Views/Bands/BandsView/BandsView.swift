@@ -12,14 +12,19 @@ struct BandsView: View {
   
   @ObservedObject var model: BandsViewModel = BandsViewModel()
   
+  @State private var searchText = ""
+  
   var body: some View {
     NavigationView {
-      List {
-        ForEach(model.sections, id: \.letter) { section in
-          Section(header: Text(section.letter)) {
-            ForEach(section.rows, id: \.id) { band in
-              NavigationLink(destination: BandView(band)) {
-                BandRow(band: band)
+      VStack {
+        SearchBar(text: $searchText)
+        List {
+          ForEach(model.sections, id: \.letter) { section in
+            Section(header: Text(section.letter)) {
+              ForEach(section.rows, id: \.id) { band in
+                NavigationLink(destination: BandView(band)) {
+                  BandRow(band: band)
+                }
               }
             }
           }
