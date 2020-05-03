@@ -18,7 +18,7 @@ struct BandsView: View {
         ForEach(model.sections, id: \.letter) { section in
           Section(header: Text(section.letter)) {
             ForEach(section.rows, id: \.id) { band in
-              NavigationLink(destination: BandView(band.id)) {
+              NavigationLink(destination: BandView(band)) {
                 BandRow(band: band)
               }
             }

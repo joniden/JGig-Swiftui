@@ -10,27 +10,31 @@ import SwiftUI
 
 struct BandView: View {
   
-  init(_ id: Int) {
-    model = BandViewModel(id)
+  init(_ band: BandModel) {
+    self.band = band
+    let gigIds = band.gigs?.compactMap { $0.id } ?? []
+    self.model = BandViewModel(gigIds)
   }
   
+  // Band comes from parent model
+  var band: BandModel
+  
+  // The model contains the gigs and the bands related to that gig
   @ObservedObject var model: BandViewModel
 
   var body: some View {
     List {
-      model.band?.gigs.map { gigs in
-        ForEach(gigs, id: \.id) { gig  in
-           GigRow(gig: gig)
-         }
-      }
+      ForEach(model.gigs, id: \.id) { gig  in
+         GigRow(gig: gig)
+       }
     }
     .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .topLeading)      
-    .navigationBarTitle(model.band?.name ?? "")
+    .navigationBarTitle(band.name)
   }
 }
 
 struct BandView_Previews: PreviewProvider {
     static var previews: some View {
-        BandView(0)
+        BandView(BandModel(id: 0, name: "dfdfdf", gigs: nil))
     }
 }

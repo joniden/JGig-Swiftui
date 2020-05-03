@@ -173,10 +173,10 @@
 		8526DA922459FF8300703144 /* Bands */ = {
 			isa = PBXGroup;
 			children = (
+				8526DADB245D96FB00703144 /* BandView */,
 				8526DADA245D96F200703144 /* BandsView */,
 				8526DACB245D546E00703144 /* BandRow.swift */,
 				8526DA8624599C3F00703144 /* BandTags.swift */,
-				8526DADB245D96FB00703144 /* BandView */,
 			);
 			path = Bands;
 			sourceTree = "<group>";

@@ -49,7 +49,7 @@ struct BandTags: View {
   }
   
   func showExtraBands() -> some View {
-    bandTag(value: "+\(extraBands)", index: Int.random(in: 0..<6))
+    bandTag(value: "+\(extraBands)", index: Int.random(in: 0..<colors.count))
   }
   
 }

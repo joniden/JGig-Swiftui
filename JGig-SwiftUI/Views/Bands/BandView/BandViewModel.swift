@@ -11,17 +11,17 @@ import Combine
 
 class BandViewModel: ObservableObject {
   
-  @Published var band: BandModel?
+  @Published var gigs: [GigModel] = [GigModel]()
   
   var cancellationToken: AnyCancellable?
   
-  init(_ bandId: Int) {
-    cancellationToken = JGigApi.band(bandId).mapError({ (error) -> Error in
-      print(bandId, error.localizedDescription)
+  init(_ gigIds: [Int]) {
+    cancellationToken = JGigApi.gigs().mapError({ (error) -> Error in
+      print(error)
       return error
     })
     .sink(receiveCompletion: { _ in }) { model in
-      self.band = model.band
+      self.gigs = model.gigs.filter({ gigIds.contains($0.id) })
     }
   }
   

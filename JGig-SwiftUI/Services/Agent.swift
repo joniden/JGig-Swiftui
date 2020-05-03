@@ -17,17 +17,25 @@ struct Agent {
   }
     
   func run<T: Decodable>(_ request: URLRequest, _ decoder: JSONDecoder = JSONDecoder()) -> AnyPublisher<Response<T>, Error> {
+    
+    // Set cache
+    let cacheSizeMegabytes = 30
+    URLCache.shared = URLCache(
+        memoryCapacity: cacheSizeMegabytes*1024*1024,
+        diskCapacity: 0,
+        diskPath: nil
+    )
+    
+    var mutableRequest = request
+    mutableRequest.cachePolicy = .returnCacheDataElseLoad
+    
     return URLSession.shared
-      .dataTaskPublisher(for: request)
+      .dataTaskPublisher(for: mutableRequest)
       .tryMap { result -> Response<T> in
         let value = try decoder.decode(T.self, from: result.data)
         return Response(value: value, response: result.response)
       }
       .receive(on: DispatchQueue.main)
       .eraseToAnyPublisher()
-  }
-  
-  private func emptyPublisher<T>(completeImmediately: Bool = true) -> AnyPublisher<T, Error> {
-      Empty<T, Error>(completeImmediately: completeImmediately).eraseToAnyPublisher()
   }
 }
