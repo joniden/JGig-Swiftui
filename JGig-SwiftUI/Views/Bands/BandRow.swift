@@ -23,7 +23,8 @@ struct BandRow: View {
          .font(.system(size: 17, weight: .bold))
       Text("\(band.gigs?.count ?? 0)")
          .multilineTextAlignment(.trailing)
-         .frame(width: 10.0)
+         .frame(width: 20.0)
+      
      }
      .frame(height: 60.0)
   }

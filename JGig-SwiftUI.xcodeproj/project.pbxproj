@@ -44,6 +44,8 @@
 		8526DADD245D970B00703144 /* BandViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8526DADC245D970B00703144 /* BandViewModel.swift */; };
 		8526DADF245DBFCA00703144 /* BandApiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8526DADE245DBFCA00703144 /* BandApiModel.swift */; };
 		8526DAE1245EAEFA00703144 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8526DAE0245EAEFA00703144 /* SearchBar.swift */; };
+		8526DAE3245EDDFD00703144 /* GigsObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8526DAE2245EDDFD00703144 /* GigsObject.swift */; };
+		8574CED7246810C100135F05 /* GigView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8574CED6246810C100135F05 /* GigView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -85,6 +87,8 @@
 		8526DADC245D970B00703144 /* BandViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BandViewModel.swift; sourceTree = "<group>"; };
 		8526DADE245DBFCA00703144 /* BandApiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BandApiModel.swift; sourceTree = "<group>"; };
 		8526DAE0245EAEFA00703144 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		8526DAE2245EDDFD00703144 /* GigsObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GigsObject.swift; sourceTree = "<group>"; };
+		8574CED6246810C100135F05 /* GigView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GigView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,9 +203,9 @@
 		8526DA96245A067100703144 /* Gigs */ = {
 			isa = PBXGroup;
 			children = (
-				8526DA97245A06B000703144 /* GigsView.swift */,
+				8574CED92468119400135F05 /* GigView */,
+				8574CED82468118400135F05 /* GigsView */,
 				8526DABE245A243300703144 /* GigImage.swift */,
-				8526DAD4245D5FF300703144 /* GigsViewModel.swift */,
 				8526DAD6245D606500703144 /* GigRow.swift */,
 			);
 			path = Gigs;
@@ -212,6 +216,7 @@
 			children = (
 				8526DAB5245A17A200703144 /* JGigApi.swift */,
 				8526DAC0245C39CD00703144 /* Agent.swift */,
+				8526DAE2245EDDFD00703144 /* GigsObject.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -261,6 +266,23 @@
 				8526DADC245D970B00703144 /* BandViewModel.swift */,
 			);
 			path = BandView;
+			sourceTree = "<group>";
+		};
+		8574CED82468118400135F05 /* GigsView */ = {
+			isa = PBXGroup;
+			children = (
+				8526DA97245A06B000703144 /* GigsView.swift */,
+				8526DAD4245D5FF300703144 /* GigsViewModel.swift */,
+			);
+			path = GigsView;
+			sourceTree = "<group>";
+		};
+		8574CED92468119400135F05 /* GigView */ = {
+			isa = PBXGroup;
+			children = (
+				8574CED6246810C100135F05 /* GigView.swift */,
+			);
+			path = GigView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -341,6 +363,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8526DA722459860D00703144 /* AppDelegate.swift in Sources */,
+				8526DAE3245EDDFD00703144 /* GigsObject.swift in Sources */,
 				8526DAB8245A1CC200703144 /* String+Extensions.swift in Sources */,
 				8526DABF245A243300703144 /* GigImage.swift in Sources */,
 				8526DAA3245A0D5800703144 /* ImageModel.swift in Sources */,
@@ -358,6 +381,7 @@
 				8526DAD7245D606500703144 /* GigRow.swift in Sources */,
 				8526DA98245A06B000703144 /* GigsView.swift in Sources */,
 				8526DAD3245D5C1500703144 /* GigSectionModel.swift in Sources */,
+				8574CED7246810C100135F05 /* GigView.swift in Sources */,
 				8526DA942459FFF100703144 /* BandsView.swift in Sources */,
 				8526DACA245D406A00703144 /* BandsViewModel.swift in Sources */,
 				8526DAAB245A0D5800703144 /* BandModel.swift in Sources */,

@@ -21,9 +21,9 @@ struct Agent {
     // Set cache
     let cacheSizeMegabytes = 30
     URLCache.shared = URLCache(
-        memoryCapacity: cacheSizeMegabytes*1024*1024,
-        diskCapacity: 0,
-        diskPath: nil
+      memoryCapacity: cacheSizeMegabytes*1024*1024,
+      diskCapacity: 0,
+      diskPath: nil
     )
     
     var mutableRequest = request

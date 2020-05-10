@@ -12,19 +12,23 @@ struct BandView: View {
   
   init(_ band: BandModel) {
     self.band = band
-    let gigIds = band.gigs?.compactMap { $0.id } ?? []
-    self.model = BandViewModel(gigIds)
   }
   
   // Band comes from parent model
   var band: BandModel
   
   // The model contains the gigs and the bands related to that gig
-  @ObservedObject var model: BandViewModel
+  @EnvironmentObject var model: GigsObject
+  
+  // Filtered gigs from the model
+  var gigs: [GigModel] {
+    let gigIds = band.gigs?.compactMap { $0.id } ?? []
+    return model.gigs.filter { gigIds.contains($0.id)  }
+  }
 
   var body: some View {
     List {
-      ForEach(model.gigs, id: \.id) { gig  in
+      ForEach(gigs, id: \.id) { gig in
          GigRow(gig: gig)
        }
     }
