@@ -13,31 +13,28 @@ struct GigView: View {
   var gig: GigModel
   
   var body: some View {
-    NavigationView {
-      VStack(alignment: .leading) {
-        
-        GigImage(gig.images?.first?.path)
-        Text(gig.venue?.name ?? "")
-          .bold()
-          .padding(.horizontal)
-       Text(gig.fromDate ?? "")
-          .foregroundColor(.secondary)
-          .padding(.horizontal)
-                
-        gig.bands.map({ bands in
-          
-          List {
-            Text("\(bands.count) bands")
-            ForEach(bands, id: \.id) { band in
-              BandRow(band: band)
-            }
-          }
-        })
-              
-      }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .topLeading)
+    VStack(alignment: .leading) {
       
-        .navigationBarTitle(gig.name)
-    }
+      GigImage(gig.images?.first?.path)
+      Text(gig.venue?.name ?? "")
+        .bold()
+        .padding(.horizontal)
+      Text(gig.fromDate ?? "")
+        .foregroundColor(.secondary)
+        .padding(.horizontal)
+              
+      gig.bands.map({ bands in
+        List {
+          Text("\(bands.count) bands")
+          ForEach(bands, id: \.id) { band in
+            BandRow(band: band)
+          }
+        }
+      })
+            
+    }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .topLeading)
+    
+      .navigationBarTitle(Text(gig.name), displayMode: .inline)
   }
 }
 

@@ -12,3 +12,18 @@ struct GigSectionModel {
   let year: String
   let rows: [GigModel]
 }
+
+
+extension Array where Element == GigSectionModel {
+  
+  func search(_ string: String) -> [GigSectionModel] {
+    
+    guard string.count > 0 else {
+      return self
+    }
+    
+    let all = self.flatMap { $0.rows }
+    return all.search(string)
+  }
+  
+}

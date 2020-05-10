@@ -72,10 +72,10 @@ extension Array where Element == GigModel {
   /// Searches the Gigs
   /// - Parameter string: search string
   /// - Returns: BandSectionModels
-  func search(_ string: String) -> [GigModel] {
+  func search(_ string: String) -> [GigSectionModel] {
     return self.filter {
       $0.name.lowercaseContains(string)
-    }
+    }.createYearSection()
   }
   
   /// Groups gigmodel by the year and sorts the array by year
@@ -85,7 +85,7 @@ extension Array where Element == GigModel {
     let dict = Dictionary(grouping: self) { $0.year }
     
     return dict.map {
-      GigSectionModel(year: $0.key ?? "", rows: $0.value)
-    }.sorted(by: { (Int($0.year) ?? 0) < (Int($1.year) ?? 0) })
+      GigSectionModel(year: "\($0.key ?? "")", rows: $0.value.sorted(by: { $0.fromDate ?? "" > $1.fromDate ?? "" }))
+    }.sorted(by: { (Int($0.year) ?? 0) > (Int($1.year) ?? 0) })
   }
 }

@@ -10,16 +10,25 @@ import SwiftUI
 
 struct GigsView: View {
   
-  @ObservedObject var model: GigsViewModel = GigsViewModel()
+  @EnvironmentObject var model: GigsObject
+  
+  @State private var searchText = ""
+  
+  var sections: [GigSectionModel] {
+    return model.gigs.createYearSection()
+  }
   
   var body: some View {
     NavigationView {
-      List {
-        ForEach(model.sections, id: \.year) { section in
-          Section(header: Text(section.year)) {
-            ForEach(section.rows, id: \.id) { gig in
-              NavigationLink(destination: GigView(gig: gig)) {
-                GigRow(gig: gig)
+      VStack {
+        SearchBar(text: $searchText)
+        List {
+          ForEach(sections.search(searchText), id: \.year) { section in
+            Section(header: Text("\(section.year) (\(section.rows.count) gigs)")) {
+              ForEach(section.rows, id: \.id) { gig in
+                NavigationLink(destination: GigView(gig: gig)) {
+                  GigRow(gig: gig)
+                }
               }
             }
           }

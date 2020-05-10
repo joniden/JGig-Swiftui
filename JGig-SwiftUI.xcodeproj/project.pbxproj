@@ -38,7 +38,6 @@
 		8526DACA245D406A00703144 /* BandsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8526DAC9245D406A00703144 /* BandsViewModel.swift */; };
 		8526DACC245D546E00703144 /* BandRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8526DACB245D546E00703144 /* BandRow.swift */; };
 		8526DAD3245D5C1500703144 /* GigSectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8526DAD2245D5C1500703144 /* GigSectionModel.swift */; };
-		8526DAD5245D5FF300703144 /* GigsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8526DAD4245D5FF300703144 /* GigsViewModel.swift */; };
 		8526DAD7245D606500703144 /* GigRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8526DAD6245D606500703144 /* GigRow.swift */; };
 		8526DAD9245D966100703144 /* BandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8526DAD8245D966100703144 /* BandView.swift */; };
 		8526DADD245D970B00703144 /* BandViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8526DADC245D970B00703144 /* BandViewModel.swift */; };
@@ -81,7 +80,6 @@
 		8526DAC9245D406A00703144 /* BandsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BandsViewModel.swift; sourceTree = "<group>"; };
 		8526DACB245D546E00703144 /* BandRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BandRow.swift; sourceTree = "<group>"; };
 		8526DAD2245D5C1500703144 /* GigSectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GigSectionModel.swift; sourceTree = "<group>"; };
-		8526DAD4245D5FF300703144 /* GigsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GigsViewModel.swift; sourceTree = "<group>"; };
 		8526DAD6245D606500703144 /* GigRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GigRow.swift; sourceTree = "<group>"; };
 		8526DAD8245D966100703144 /* BandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BandView.swift; sourceTree = "<group>"; };
 		8526DADC245D970B00703144 /* BandViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BandViewModel.swift; sourceTree = "<group>"; };
@@ -272,7 +270,6 @@
 			isa = PBXGroup;
 			children = (
 				8526DA97245A06B000703144 /* GigsView.swift */,
-				8526DAD4245D5FF300703144 /* GigsViewModel.swift */,
 			);
 			path = GigsView;
 			sourceTree = "<group>";
@@ -388,7 +385,6 @@
 				8526DAB6245A17A200703144 /* JGigApi.swift in Sources */,
 				8526DAAA245A0D5800703144 /* GigsApiModel.swift in Sources */,
 				8526DA892459CF3100703144 /* HomeStats.swift in Sources */,
-				8526DAD5245D5FF300703144 /* GigsViewModel.swift in Sources */,
 				8526DA762459860D00703144 /* ContentView.swift in Sources */,
 				8526DAC5245D3C3E00703144 /* HomeViewModel.swift in Sources */,
 				8526DABA245A1CE500703144 /* Constant.swift in Sources */,
