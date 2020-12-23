@@ -10,35 +10,39 @@ import SwiftUI
 import KingfisherSwiftUI
 
 struct HomeView: View {
-  
-  @ObservedObject var model: HomeViewModel = HomeViewModel()
-
-  var body: some View {
-    
-    NavigationView {
-      VStack(alignment: .leading) {
-        GigImage(model.home?.lastgig.images?.first?.path)
-        Text(model.home?.lastgig.name ?? "")
-          .font(.system(size: 28))
-          .bold()
-          .padding(.horizontal)
-        Text(model.home?.lastgig.fromDate ?? "")
-          .foregroundColor(.secondary)
-          .padding(.horizontal)
-        BandTags(model.home?.lastgig.bands).padding(.horizontal)
-        HomeStats(gigs: model.home?.gigs ?? 0,
-                  totalGigCount: model.home?.totalGigCount ?? 0,
-                  bandsCount: model.home?.bands.count ?? 0)
-          .padding()
-      }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .topLeading)
-      
-      .navigationBarTitle("Latest Gig")
-    }
-  }
+	
+	@EnvironmentObject var viewModel: ContentViewModel
+	
+	private var home: HomeModel {
+		return viewModel.home
+	}
+	
+	var body: some View {
+		
+		NavigationView {
+			VStack(alignment: .leading) {
+				GigImage(home.lastgig.images?.first?.path)
+				Text(home.lastgig.name)
+					.font(.system(size: 28))
+					.bold()
+					.padding(.horizontal)
+				Text(home.lastgig.fromDate ?? "")
+					.foregroundColor(.secondary)
+					.padding(.horizontal)
+				BandTags(home.lastgig.bands).padding(.horizontal)
+				HomeStats(gigs: home.gigs,
+						  totalGigCount: home.totalGigCount,
+						  bandsCount: home.bands.count)
+					.padding()
+			}.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .topLeading)
+			
+			.navigationBarTitle("Latest Gig")
+		}
+	}
 }
 
 struct HomeView_Previews: PreviewProvider {
-    static var previews: some View {
-        HomeView()
-    }
+	static var previews: some View {
+		HomeView()
+	}
 }

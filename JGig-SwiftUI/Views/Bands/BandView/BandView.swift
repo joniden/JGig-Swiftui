@@ -18,17 +18,11 @@ struct BandView: View {
   var band: BandModel
   
   // The model contains the gigs and the bands related to that gig
-  @EnvironmentObject var model: GigsObject
+  @EnvironmentObject var viewModel: ContentViewModel
   
-  // Filtered gigs from the model
-  var gigs: [GigModel] {
-    let gigIds = band.gigs?.compactMap { $0.id } ?? []
-    return model.gigs.filter { gigIds.contains($0.id)  }
-  }
-
   var body: some View {
     List {
-      ForEach(gigs, id: \.id) { gig in
+		ForEach(viewModel.gigs(band: band), id: \.id) { gig in
          GigRow(gig: gig)
        }
     }

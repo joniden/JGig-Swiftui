@@ -26,7 +26,7 @@ struct HomeStats: View {
       HStack(alignment: .center) {
         Cell(digit: bandsCount, header: "Bands")
         Cell(digit: gigs, header: "Gigs")
-        Cell(digit: totalGigCount, header: "On Stage")
+        //Cell(digit: totalGigCount, header: "On Stage")
       }.frame(maxWidth: .infinity)
       
     }.frame(maxWidth: .infinity)

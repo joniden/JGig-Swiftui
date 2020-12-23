@@ -20,8 +20,8 @@ enum JGigApi {
     var path: String {
       switch self {
       case .home: return "?json"
-      case .bands: return "bands?_sort=id:DESC&_limit=500"
-      case .gigs: return "gigs?_sort=id:DESC&_limit=500"
+      case .bands: return "bands?_sort=name:DESC&_limit=500"
+      case .gigs: return "gigs?_sort=from_date:DESC&_limit=500"
       case .band(let id):
         return "bands/\(id)/"
       }
@@ -47,7 +47,7 @@ enum JGigApi {
     return screen(.bands)
   }
   
-  static func screen<T: Decodable>(_ screen: Screen) -> AnyPublisher<T, Error> {
+  private static func screen<T: Decodable>(_ screen: Screen) -> AnyPublisher<T, Error> {
     let request = URLRequest(url: URL(string: base + screen.path)!)
     return run(request)
   }
