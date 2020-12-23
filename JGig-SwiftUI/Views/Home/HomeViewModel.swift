@@ -15,13 +15,14 @@ class HomeViewModel: ObservableObject {
   var cancellationToken: AnyCancellable?
   
   init() {
-    cancellationToken = JGigApi.screen(.home).mapError({ (error) -> Error in // 5
-        print(error)
-        return error
-      })
-      .sink(receiveCompletion: { _ in }) { homeApiModel in
-      self.home = homeApiModel
-    }
+    cancellationToken = JGigApi.screen(.home)
+		.mapError({ (error) -> Error in
+			print(error)
+			return error
+		})
+		.sink(receiveCompletion: { _ in }) { homeApiModel in
+			self.home = homeApiModel
+		}
   }
   
 }

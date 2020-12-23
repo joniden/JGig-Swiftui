@@ -23,7 +23,7 @@ struct ImageModel: Codable {
     title = try values.decode(String.self, forKey: .title)
     let filePath = try values.decode(String.self, forKey: .path)
     
-    path = "\(Constant.baseUrl)\(filePath)"
+    path = "\(Constant.imageBaseUrl)\(filePath)"
     
   }
 

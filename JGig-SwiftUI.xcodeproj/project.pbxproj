@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		516842622593770500C163EF /* BandGigModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516842612593770500C163EF /* BandGigModel.swift */; };
+		5168426725937E2B00C163EF /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5168426625937E2B00C163EF /* ContentViewModel.swift */; };
 		8526DA722459860D00703144 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8526DA712459860D00703144 /* AppDelegate.swift */; };
 		8526DA742459860D00703144 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8526DA732459860D00703144 /* SceneDelegate.swift */; };
 		8526DA762459860D00703144 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8526DA752459860D00703144 /* ContentView.swift */; };
@@ -22,11 +24,9 @@
 		8526DAA3245A0D5800703144 /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8526DA9A245A0D5700703144 /* ImageModel.swift */; };
 		8526DAA4245A0D5800703144 /* HomeApiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8526DA9B245A0D5800703144 /* HomeApiModel.swift */; };
 		8526DAA5245A0D5800703144 /* BandSectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8526DA9C245A0D5800703144 /* BandSectionModel.swift */; };
-		8526DAA6245A0D5800703144 /* BandsApiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8526DA9D245A0D5800703144 /* BandsApiModel.swift */; };
 		8526DAA7245A0D5800703144 /* GigType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8526DA9E245A0D5800703144 /* GigType.swift */; };
 		8526DAA8245A0D5800703144 /* GigModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8526DA9F245A0D5800703144 /* GigModel.swift */; };
 		8526DAA9245A0D5800703144 /* VenueModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8526DAA0245A0D5800703144 /* VenueModel.swift */; };
-		8526DAAA245A0D5800703144 /* GigsApiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8526DAA1245A0D5800703144 /* GigsApiModel.swift */; };
 		8526DAAB245A0D5800703144 /* BandModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8526DAA2245A0D5800703144 /* BandModel.swift */; };
 		8526DAB6245A17A200703144 /* JGigApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8526DAB5245A17A200703144 /* JGigApi.swift */; };
 		8526DAB8245A1CC200703144 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8526DAB7245A1CC200703144 /* String+Extensions.swift */; };
@@ -41,13 +41,14 @@
 		8526DAD7245D606500703144 /* GigRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8526DAD6245D606500703144 /* GigRow.swift */; };
 		8526DAD9245D966100703144 /* BandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8526DAD8245D966100703144 /* BandView.swift */; };
 		8526DADD245D970B00703144 /* BandViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8526DADC245D970B00703144 /* BandViewModel.swift */; };
-		8526DADF245DBFCA00703144 /* BandApiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8526DADE245DBFCA00703144 /* BandApiModel.swift */; };
 		8526DAE1245EAEFA00703144 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8526DAE0245EAEFA00703144 /* SearchBar.swift */; };
 		8526DAE3245EDDFD00703144 /* GigsObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8526DAE2245EDDFD00703144 /* GigsObject.swift */; };
 		8574CED7246810C100135F05 /* GigView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8574CED6246810C100135F05 /* GigView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		516842612593770500C163EF /* BandGigModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BandGigModel.swift; sourceTree = "<group>"; };
+		5168426625937E2B00C163EF /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		8526DA6E2459860D00703144 /* JGig-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JGig-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8526DA712459860D00703144 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8526DA732459860D00703144 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,11 +66,9 @@
 		8526DA9A245A0D5700703144 /* ImageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
 		8526DA9B245A0D5800703144 /* HomeApiModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeApiModel.swift; sourceTree = "<group>"; };
 		8526DA9C245A0D5800703144 /* BandSectionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BandSectionModel.swift; sourceTree = "<group>"; };
-		8526DA9D245A0D5800703144 /* BandsApiModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BandsApiModel.swift; sourceTree = "<group>"; };
 		8526DA9E245A0D5800703144 /* GigType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GigType.swift; sourceTree = "<group>"; };
 		8526DA9F245A0D5800703144 /* GigModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GigModel.swift; sourceTree = "<group>"; };
 		8526DAA0245A0D5800703144 /* VenueModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenueModel.swift; sourceTree = "<group>"; };
-		8526DAA1245A0D5800703144 /* GigsApiModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GigsApiModel.swift; sourceTree = "<group>"; };
 		8526DAA2245A0D5800703144 /* BandModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BandModel.swift; sourceTree = "<group>"; };
 		8526DAB5245A17A200703144 /* JGigApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JGigApi.swift; sourceTree = "<group>"; };
 		8526DAB7245A1CC200703144 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
@@ -83,7 +82,6 @@
 		8526DAD6245D606500703144 /* GigRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GigRow.swift; sourceTree = "<group>"; };
 		8526DAD8245D966100703144 /* BandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BandView.swift; sourceTree = "<group>"; };
 		8526DADC245D970B00703144 /* BandViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BandViewModel.swift; sourceTree = "<group>"; };
-		8526DADE245DBFCA00703144 /* BandApiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BandApiModel.swift; sourceTree = "<group>"; };
 		8526DAE0245EAEFA00703144 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		8526DAE2245EDDFD00703144 /* GigsObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GigsObject.swift; sourceTree = "<group>"; };
 		8574CED6246810C100135F05 /* GigView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GigView.swift; sourceTree = "<group>"; };
@@ -128,6 +126,7 @@
 				8526DA712459860D00703144 /* AppDelegate.swift */,
 				8526DA732459860D00703144 /* SceneDelegate.swift */,
 				8526DA752459860D00703144 /* ContentView.swift */,
+				5168426625937E2B00C163EF /* ContentViewModel.swift */,
 				8526DA772459861000703144 /* Assets.xcassets */,
 				8526DA7C2459861000703144 /* LaunchScreen.storyboard */,
 				8526DA7F2459861000703144 /* Info.plist */,
@@ -230,8 +229,6 @@
 			isa = PBXGroup;
 			children = (
 				8526DAA2245A0D5800703144 /* BandModel.swift */,
-				8526DADE245DBFCA00703144 /* BandApiModel.swift */,
-				8526DA9D245A0D5800703144 /* BandsApiModel.swift */,
 				8526DA9C245A0D5800703144 /* BandSectionModel.swift */,
 			);
 			path = Band;
@@ -241,7 +238,7 @@
 			isa = PBXGroup;
 			children = (
 				8526DA9F245A0D5800703144 /* GigModel.swift */,
-				8526DAA1245A0D5800703144 /* GigsApiModel.swift */,
+				516842612593770500C163EF /* BandGigModel.swift */,
 				8526DA9E245A0D5800703144 /* GigType.swift */,
 				8526DAD2245D5C1500703144 /* GigSectionModel.swift */,
 			);
@@ -312,7 +309,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1140;
-				LastUpgradeCheck = 1140;
+				LastUpgradeCheck = 1230;
 				ORGANIZATIONNAME = "Joacim Nidén";
 				TargetAttributes = {
 					8526DA6D2459860D00703144 = {
@@ -370,11 +367,9 @@
 				8526DAE1245EAEFA00703144 /* SearchBar.swift in Sources */,
 				8526DA8724599C3F00703144 /* BandTags.swift in Sources */,
 				8526DAA5245A0D5800703144 /* BandSectionModel.swift in Sources */,
-				8526DAA6245A0D5800703144 /* BandsApiModel.swift in Sources */,
 				8526DA742459860D00703144 /* SceneDelegate.swift in Sources */,
 				8526DAA7245A0D5800703144 /* GigType.swift in Sources */,
 				8526DA8C2459D1A800703144 /* Colors+Extensions.swift in Sources */,
-				8526DADF245DBFCA00703144 /* BandApiModel.swift in Sources */,
 				8526DAD7245D606500703144 /* GigRow.swift in Sources */,
 				8526DA98245A06B000703144 /* GigsView.swift in Sources */,
 				8526DAD3245D5C1500703144 /* GigSectionModel.swift in Sources */,
@@ -382,14 +377,15 @@
 				8526DA942459FFF100703144 /* BandsView.swift in Sources */,
 				8526DACA245D406A00703144 /* BandsViewModel.swift in Sources */,
 				8526DAAB245A0D5800703144 /* BandModel.swift in Sources */,
+				516842622593770500C163EF /* BandGigModel.swift in Sources */,
 				8526DAB6245A17A200703144 /* JGigApi.swift in Sources */,
-				8526DAAA245A0D5800703144 /* GigsApiModel.swift in Sources */,
 				8526DA892459CF3100703144 /* HomeStats.swift in Sources */,
 				8526DA762459860D00703144 /* ContentView.swift in Sources */,
 				8526DAC5245D3C3E00703144 /* HomeViewModel.swift in Sources */,
 				8526DABA245A1CE500703144 /* Constant.swift in Sources */,
 				8526DAC1245C39CE00703144 /* Agent.swift in Sources */,
 				8526DAA4245A0D5800703144 /* HomeApiModel.swift in Sources */,
+				5168426725937E2B00C163EF /* ContentViewModel.swift in Sources */,
 				8526DAA9245A0D5800703144 /* VenueModel.swift in Sources */,
 				8526DACC245D546E00703144 /* BandRow.swift in Sources */,
 				8526DADD245D970B00703144 /* BandViewModel.swift in Sources */,
@@ -436,6 +432,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -496,6 +493,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;

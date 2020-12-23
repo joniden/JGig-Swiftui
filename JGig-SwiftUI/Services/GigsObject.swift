@@ -20,7 +20,7 @@ class GigsObject: ObservableObject {
       return error
     })
     .sink(receiveCompletion: { _ in }) { apiModel in
-      self.gigs = apiModel.gigs
+      self.gigs = apiModel
     }
   }
 }

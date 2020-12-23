@@ -20,10 +20,10 @@ enum JGigApi {
     var path: String {
       switch self {
       case .home: return "?json"
-      case .bands: return "bands/all?json"
-      case .gigs: return "gigs/all?json"
+      case .bands: return "bands?_sort=id:DESC&_limit=500"
+      case .gigs: return "gigs?_sort=id:DESC&_limit=500"
       case .band(let id):
-        return "bands/\(id)?json"
+        return "bands/\(id)/"
       }
     }
   }
@@ -35,15 +35,15 @@ enum JGigApi {
   
   // MARK: - Static funcs
   
-  static func gigs() -> AnyPublisher<GigsApiModel, Error> {
+  static func gigs() -> AnyPublisher<[GigModel], Error> {
     return screen(.gigs)
   }
   
-  static func band(_ id: Int) -> AnyPublisher<BandApiModel, Error> {
+  static func band(_ id: Int) -> AnyPublisher<BandModel, Error> {
     return screen(.band(id))
   }
   
-  static func bands() -> AnyPublisher<BandsApiModel, Error> {
+  static func bands() -> AnyPublisher<[BandModel], Error> {
     return screen(.bands)
   }
   

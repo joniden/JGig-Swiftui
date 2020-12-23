@@ -21,7 +21,7 @@ class BandsViewModel: ObservableObject {
       return error
     })
     .sink(receiveCompletion: { _ in }) { apiModel in
-      self.sections = apiModel.bands.createAlphabeticalSection()
+      self.sections = apiModel.createAlphabeticalSection()
     }
   }
   

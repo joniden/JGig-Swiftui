@@ -22,7 +22,9 @@ struct GigModel: Codable, Identifiable {
   let year: String? // Not from API
   
   enum CodingKeys: String, CodingKey {
-    case id, name, type, bands, venue, images
+    case id, name, type, bands
+	case images = "gig_images"
+	case venue = "venue_id"
     case fromDate = "from_date"
     case endDate = "end_date"
   }

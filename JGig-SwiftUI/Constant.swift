@@ -9,5 +9,6 @@
 import Foundation
 
 struct Constant {
-  static var baseUrl = "https://moshpitandcode.com/gigs/"
+	static var baseUrl = "http://localhost:1337/"
+	static var imageBaseUrl = "https://moshpitandcode.com/gigs/"
 }

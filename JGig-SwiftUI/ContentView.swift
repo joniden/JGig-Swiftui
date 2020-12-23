@@ -9,6 +9,9 @@
 import SwiftUI
 
 struct ContentView: View {
+		
+	@EnvironmentObject var bands: [BandModel]
+	@EnvironmentObject var gigs: [GigModel]
   
   var body: some View {
     TabView {

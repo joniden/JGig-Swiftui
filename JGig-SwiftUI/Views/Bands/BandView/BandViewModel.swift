@@ -21,7 +21,7 @@ class BandViewModel: ObservableObject {
       return error
     })
     .sink(receiveCompletion: { _ in }) { model in
-      self.gigs = model.gigs.filter({ gigIds.contains($0.id) })
+      self.gigs = model.filter({ gigIds.contains($0.id) })
     }
   }
   

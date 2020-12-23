@@ -12,7 +12,7 @@ import Foundation
 struct BandModel: Codable, Identifiable, Hashable {
   let id: Int
   let name: String
-  let gigs: [GigModel]?
+  let gigs: [BandGigModel]?
 }
 
 extension Array where Element == BandModel {
@@ -20,7 +20,6 @@ extension Array where Element == BandModel {
   /// Groups bandmodels by the first letter in their names and sorts the array by the letter
   /// - Returns: BandSectionModels
   func createAlphabeticalSection() -> [BandSectionModel] {
-    
     let dict = Dictionary(grouping: self) { String($0.name.first!) }
     
     return dict.map {
